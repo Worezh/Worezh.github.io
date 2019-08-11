@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 0;
+  margin-left: 70px;
+  margin-right: 70px;
+  font-family: Arial, Helvetica, sans-serif, "Khmer OS Battambang-Kh Auto";
+  background-color: white;
+}
+
+/* Banner */
+.kratie {
+  background-image:  url("banner.jpg");
+  height: 300px;
+  background-size: cover;
+}
+
+/* Box for image */
+.imgright {
+  float: left;
+  width: 25%;
+  padding: 15px 0;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.imgright img{
+  width: 100%;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 1px;
+  text-align: center;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+.link {
+  float: left;
+  width: 15%;
+  text-align: left;
+}
+
+/* Style the list inside the menu
+.link ul {
+  list-style-type: none;
+  padding: 10px;
+} */
+
+.link a {
+  width: 100%;
+  padding: 18.1px;
+  margin-top: 15px;
+  background-color:#e5e5e5;
+  color:#9896f1;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.link a:hover {
+  background: rgb(77, 77, 77);
+}
+
+/* Text Information */
+article {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
+
+article p {
+  margin: 12px;
+  font-size: 16px;
+}
+
+article ol li {
+  font-size: 23px;
+}
+
+article ul li {
+  font-size: 16px;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+/* Dropdown list */
+nav ul{
+    margin: 0 auto;
+    float: right;
+    width: 100%;
+}
+nav ul li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    position: relative;
+    margin-left: 70px;
+}
+nav ul li a{
+    border-right: 1px dotted #311d3f;
+    padding: 13px 25px;
+    color:#9896f1;
+    text-decoration: none;
+    display: inline-block;
+    background: #393e46;
+}
+
+nav ul li a:hover {
+    background: #311d3f;
+}
+
+nav ul li:hover> ul{
+    visibility:visible;
+}
+
+nav ul ul{
+    list-style: none;
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 205px;
+    right: -9px;
+    top: 31px;
+}
+
+nav ul ul li a{
+    padding: 9px 15px;
+    color: #15b7b9;
+    text-decoration: none;
+    display: inline-block;
+    width: 205px;
+    border-bottom: 1px dotted #a6e3e9;
+}
+
+nav ul ul li ul{
+    top: 0;
+    left: 135.1px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens*/
+@media (max-width: 620px) {
+  nav, article, .link, .introduction, .imgright, .kratie {
+    width: 100%;
+    height: auto;
+  }
+}
